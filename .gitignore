@@ -12,3 +12,6 @@ tmp/
 
 # Node (in case tooling is added later)
 node_modules/
+
+# Agent CLI state
+.antigravitycli/
