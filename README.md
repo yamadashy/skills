@@ -12,8 +12,8 @@ npx skills add yamadashy/skills
 
 | Skill | Description |
 | --- | --- |
+| [agent-carnet](skills/agent-carnet/SKILL.md) | Persistent file-based notebook for AI agents and humans — save, recall, and organize notes across sessions. |
 | [antigravity-exec](skills/antigravity-exec/SKILL.md) | Delegate a task to the Antigravity CLI (`agy`) as a sub-agent. |
-| [carnet](skills/carnet/SKILL.md) | Persistent file-based notebook for AI agents and humans — save, recall, and organize notes across sessions. |
 | [claude-exec](skills/claude-exec/SKILL.md) | Delegate a task to the Claude Code CLI as a sub-agent. |
 | [codex-exec](skills/codex-exec/SKILL.md) | Delegate a task to the OpenAI Codex CLI as a sub-agent. |
 | [codex-review-loop](skills/codex-review-loop/SKILL.md) | Run an iterative Codex review-and-fix loop over a change. |

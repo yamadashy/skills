@@ -1,5 +1,5 @@
 ---
-name: carnet
+name: agent-carnet
 description: |
   Persistent file-based notebook (.carnet/<category>/<slug>.md, auto-expiring after 30 days of disuse) for AI agents and humans.
 
