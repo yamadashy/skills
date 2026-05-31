@@ -10,6 +10,8 @@ npx skills add yamadashy/skills
 
 ## Skills
 
+Bundled in this repository — installed together by the command above.
+
 | Category | Skill | Description |
 | --- | --- | --- |
 | Sub-agent | [claude-exec](skills/claude-exec/SKILL.md) | Delegate a task to the Claude Code CLI as a sub-agent. |
@@ -18,7 +20,15 @@ npx skills add yamadashy/skills
 | Code review | [claude-review-loop](skills/claude-review-loop/SKILL.md) | Run an iterative Claude review-and-fix loop over a change. |
 | Code review | [codex-review-loop](skills/codex-review-loop/SKILL.md) | Run an iterative Codex review-and-fix loop over a change. |
 | Pull request | [pr-fix](skills/pr-fix/SKILL.md) | Drive a PR to mergeable — address review feedback and fix failing CI, then reply and resolve threads. |
-| Document | [pdfvision](skills/pdfvision/SKILL.md) | Extract text, metadata, layout, image boxes, OCR, and rendered page PNGs from a PDF via the [pdfvision](https://github.com/yamadashy/pdfvision) CLI. |
-| Memory | [agent-carnet](skills/agent-carnet/SKILL.md) | Persistent file-based notebook for AI agents and humans — save, recall, and organize notes across sessions, backed by [agent-carnet](https://github.com/yamadashy/agent-carnet). |
 
-Each skill lives under [`skills/<name>/`](skills) with its own `SKILL.md`.
+Each bundled skill lives under [`skills/<name>/`](skills) with its own `SKILL.md`.
+
+## Skills in their own repositories
+
+These have their own home repository — install each directly:
+
+| Repository | Skills | Install |
+| --- | --- | --- |
+| [agent-carnet](https://github.com/yamadashy/agent-carnet) | Persistent file-based notebook for AI agents and humans. | `npx skills add yamadashy/agent-carnet` |
+| [pdfvision](https://github.com/yamadashy/pdfvision) | Extract text, metadata, layout, OCR, and rendered page PNGs from a PDF. | `npx skills add yamadashy/pdfvision` |
+| [agent-readable](https://github.com/yamadashy/agent-readable) | Fetch clean, readable web content (arXiv, GitHub, MDN, PDF, SpeakerDeck, spec, Stack Overflow). | `npx skills add yamadashy/agent-readable` |

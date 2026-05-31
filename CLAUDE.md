@@ -9,6 +9,14 @@ installable in one step via `npx skills add yamadashy/skills`. Skills that used
 to live scattered across `~/.agents/skills` and per-project `.agents/skills`
 directories are centralized here so they are portable and reproducible.
 
+It holds two kinds of skill:
+
+- **Bundled** — small, general skills with no home of their own, vendored under
+  `skills/<name>/` and installed together by the command above.
+- **Referenced** — skills that ship from their own repository (e.g. a CLI's repo).
+  These are *not* copied in; the README lists them with their own
+  `npx skills add <owner>/<repo>` command so each stays the single source of truth.
+
 ## Philosophy
 
 - **One home, one command.** A skill is only worth having if it's findable and
@@ -20,8 +28,11 @@ directories are centralized here so they are portable and reproducible.
   `SKILL.md`, run the tool and confirm it. Untested instructions are worse than
   none — they fail silently inside an agent. (For example, `agy`'s `-p`
   rejecting stdin was documented only after testing it.)
-- **Self-contained.** Each skill is a full folder — `skills/<name>/SKILL.md`
+- **Self-contained.** Each bundled skill is a full folder — `skills/<name>/SKILL.md`
   plus any `references/` — copied in, not symlinked, so it travels intact.
+- **Don't vendor what has its own repo.** If a skill ships from its own
+  repository, reference it (README + `npx skills add <owner>/<repo>`) instead of
+  copying it here — one source of truth, no drift between two copies.
 
 ## The `*-exec` family
 
@@ -43,5 +54,6 @@ When a new agent CLI appears, add it as `<tool>-exec` following this same shape.
   frontmatter `name` matches the folder name.
 - **English only.** All skill content — frontmatter, body, and trigger phrases —
   is written in English, because this repo is public.
-- **README:** keep the skills table in sync; each skill name links to its
-  `SKILL.md`.
+- **README:** keep both tables in sync — the bundled-skills table (each name
+  links to its `SKILL.md`) and the "Skills in their own repositories" table
+  (repo link + one-line summary + `npx skills add` command).
