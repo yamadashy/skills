@@ -20,7 +20,7 @@ Bundled in this repository — installed together by the command above.
 | Code review | [claude-review-loop](skills/claude-review-loop/SKILL.md) | Run an iterative Claude review-and-fix loop over a change. |
 | Code review | [codex-review-loop](skills/codex-review-loop/SKILL.md) | Run an iterative Codex review-and-fix loop over a change. |
 | Pull request | [pr-fix](skills/pr-fix/SKILL.md) | Drive a PR to mergeable — address review feedback and fix failing CI, then reply and resolve threads. |
-| Pull request | [pr-vet](skills/pr-vet/SKILL.md) | Vet a PR and its author for supply-chain risk — account reputation, diff scan, and current attack-technique mapping. |
+| Pull request | [pr-vet](skills/pr-vet/SKILL.md) | Vet a PR and its author for supply-chain risk — runs isolated in a sub-agent, resists prompt-injection and hidden-Unicode smuggling, checks account reputation, scans the diff, and maps it to current attack techniques. |
 
 Each bundled skill lives under [`skills/<name>/`](skills) with its own `SKILL.md`.
 
