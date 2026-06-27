@@ -53,7 +53,10 @@ When a new agent CLI appears, add it as `<tool>-exec` following this same shape.
 - **Layout:** one folder per skill under `skills/`, each with a `SKILL.md` whose
   frontmatter `name` matches the folder name.
 - **English only.** All skill content — frontmatter, body, and trigger phrases —
-  is written in English, because this repo is public.
+  is written in English, because this repo is public. *Exception:* a skill whose
+  subject is a specific natural language (e.g. `readable-japanese`, about Japanese
+  prose) may be written in that target language, since its examples and trigger
+  phrases only work there.
 - **README:** keep both tables in sync — the bundled-skills table (each name
   links to its `SKILL.md`) and the "Skills in their own repositories" table
   (repo link + one-line summary + `npx skills add` command).
