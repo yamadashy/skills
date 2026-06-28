@@ -21,6 +21,7 @@ Bundled in this repository — installed together by the command above.
 | Code review | [codex-review-loop](skills/codex-review-loop/SKILL.md) | Run an iterative Codex review-and-fix loop over a change. |
 | Pull request | [pr-fix](skills/pr-fix/SKILL.md) | Drive a PR to mergeable — address review feedback and fix failing CI, then reply and resolve threads. |
 | Pull request | [pr-vet](skills/pr-vet/SKILL.md) | Vet a PR and its author for supply-chain risk — runs isolated in a sub-agent, resists prompt-injection and hidden-Unicode smuggling, checks account reputation, scans the diff, and maps it to current attack techniques. |
+| Pull request | [renovate-merge](skills/renovate-merge/SKILL.md) | Batch-merge Renovate dependency PRs safely — gates each on GitHub-verified bot commits, non-major scope, a confined diff + supply-chain scan, release cooldown, green CI, and mergeable state, then auto-approves and merges only the ones that clear every gate. |
 | Writing | [readable-japanese](skills/readable-japanese/SKILL.md) | Tune Japanese prose into a readable rhythm — checks phonological clashes, prosody/syntax alignment, and end-of-sentence monotony, without altering meaning. (Japanese content — see CLAUDE.md.) |
 
 Each bundled skill lives under [`skills/<name>/`](skills) with its own `SKILL.md`.
