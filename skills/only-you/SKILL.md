@@ -5,7 +5,8 @@ description: "Surface the insights about a repository that only a frontier-tier 
 
 # Only You
 
-The ask: given this repository, say the things only you can say.
+The ask: given this repository, say the things only you can say — and stage
+the things only you can do, so the user can act on any of them with one word.
 
 You are presumably the most capable model available to the user, and possibly
 only briefly so. This skill exists to extract the slice of your capability that
@@ -62,6 +63,16 @@ sentence, the evidence, why it matters, and why a routine review would have
 missed it. If fewer than three survive the filter, say so — a short honest list
 beats a padded one. Deliver in the user's language.
 
+End each insight with **the task it unlocks** — the piece of work the user
+should hand back to *you*, stated so that acting costs one word ("do 2").
+The filter applies to the doing as much as the seeing: if a mid-tier model
+could execute the follow-up correctly, say so and mark it as delegation
+fodder — it is not the point. The tasks worth listing are the ones where
+execution itself needs the frontier: resolving the tension across the whole
+repo at once, prototyping the alternative premise, designing the thing whose
+absence you spotted. An insight is what only you can see; the task is what
+only you can do.
+
 ## Notes
 
 - This skill is deliberately thin. Frontier models degrade when over-scripted;
@@ -69,4 +80,8 @@ beats a padded one. Deliver in the user's language.
   rest. When maintaining it, resist adding steps.
 - If you are *not* the most capable model available to the user, say so and
   suggest running this where the frontier is.
-- The deliverable is your assessment. Don't fix anything unless asked.
+- Don't execute a task until the user picks one. When they do, deliver the
+  result only you could have made — the whole-repo resolution of the tension,
+  not the local patch a mid-tier model would write. If mid-execution the task
+  turns out to be delegable after all, say so instead of burning frontier
+  tokens on it.
