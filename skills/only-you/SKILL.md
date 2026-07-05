@@ -37,7 +37,7 @@ or drop it.
 ## How to work
 
 1. **Scout — spend cheap tokens, save your context.** For anything but a
-   small repo, fan out subagents (cheaper models are fine) to map purpose,
+   small repo, fan out subagents (the model one tier below you) to map purpose,
    structure, conventions, and history — `git log` tells you what the author
    values and struggles with. Read yourself only the load-bearing files the
    maps point to. On a small repo, just read everything.
@@ -45,7 +45,8 @@ or drop it.
    candidate tasks and apply the filter ruthlessly — expect to discard most.
    Do not trust self-assessment: mid-read, every candidate feels
    frontier-worthy. The baseline is mandatory — launch several scouts in
-   parallel (cheaper models), each asked what tasks *it* would propose and
+   parallel (the model one tier below you), each asked what tasks *it* would
+   propose and
    could carry out on this repo; the union of their lists is the baseline,
    and anything on it — or anything they could plainly execute — is
    discarded. One scout is one noisy sample; several make the baseline
