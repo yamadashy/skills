@@ -40,10 +40,17 @@ Three phases. The first is delegable; the second is not.
    On a small repo, just read everything.
 2. **Judge — the part only you can do. Do not delegate it.** Think at full
    depth about the highest-leverage, non-obvious observations, and apply the
-   filter ruthlessly — expect to discard most candidates. A concrete way to
-   calibrate: also ask a scout for *its* best insights about the repo, and
-   treat that list as the baseline. Anything on it is, by definition, not
-   only-you.
+   filter ruthlessly — expect to discard most candidates. Do not trust
+   self-assessment here: mid-read, every observation feels only-you. The
+   baseline is mandatory — launch several scouts in parallel (cheaper models),
+   each asked for *its* best insights about the repo and handed the filter
+   categories above; the union of their lists is the baseline, and anything
+   on it is discarded. One scout is one noisy sample; several make the
+   baseline strong and the surviving delta honest. Survivors
+   tend to come less from out-reasoning the scout on the same text than from
+   wider scope: evidence outside the repo (how it is actually installed,
+   deployed, used) and turning the repo's own stated principles back on
+   itself.
 3. **Ground.** Every surviving insight must point at concrete evidence — files,
    lines, commits, or a precise absence ("there is no X anywhere under Y").
    An insight you cannot ground is an opinion; cut it or label it as one.
