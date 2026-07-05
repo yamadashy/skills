@@ -1,87 +1,74 @@
 ---
 name: only-you
-description: "Surface the insights about a repository that only a frontier-tier model can produce — the judgments a routine code review, a linter, or a mid-tier model reading the same files would miss. Triggers on: 'what can only you tell me about this repo', 'only-you', 'your frontier take', 'the insights only you can give', or when the user asks for the highest-level judgment on a codebase rather than a routine review."
+description: "Propose the tasks on a repository that only a frontier-tier model can execute — the work a mid-tier model or a routine engineer would fail at or do shallowly. The deliverable is a numbered pitch list ('I can do this here, and nothing cheaper can') for the human to greenlight. Triggers on: 'what could only you do in this repo', 'only-you', 'find frontier-worthy tasks', 'what work is worth handing to you', or when the user wants to know what to give the most capable model available."
 ---
 
 # Only You
 
-The ask: given this repository, say the things only you can say — and stage
-the things only you can do, so the user can act on any of them with one word.
+The ask: given this repository, propose the work only you can do — pitched so
+the human can pick one and hand it back to you.
 
-You are presumably the most capable model available to the user, and possibly
-only briefly so. This skill exists to extract the slice of your capability that
-cheaper models cannot replicate — not to produce another code review.
+This is not a review and not an insight list. The deliverable is a set of
+task pitches, each one a claim: "I can do this here, and nothing cheaper
+can." The human decides which to greenlight; you execute nothing until they
+do.
 
 ## The filter
 
-An observation qualifies only if it survives this question: **would a competent
-senior engineer doing a standard review, a linter, or a mid-tier model reading
-the same files have produced it?** If yes, discard it. What survives is usually
-one of:
+A task qualifies only if it survives this question: **would a mid-tier model,
+or a competent engineer with enough time, have delivered essentially the same
+result?** If yes, discard it — that is delegation fodder, not a pitch. What
+survives usually looks like:
 
-- **A questioned premise** — the repo, or a component of it, is solving the
-  wrong problem, or need not exist at all.
-- **A conspicuous absence** — what's missing matters more than what's wrong,
-  and absences don't show up in diffs.
-- **A cross-cutting tension** — two decisions that each make sense alone and
-  contradict each other, visible only with the whole repo held in the head at once.
-- **A second-order consequence** — how today's reasonable decision bites in six
-  months, given where the repo is clearly heading.
-- **The uncomfortable truth** — the thing the author needs to hear and nobody
-  will say.
+- **Resolving a cross-cutting tension** — two decisions that each make sense
+  alone but contradict each other, fixed everywhere at once with the whole
+  repo held in the head.
+- **Rebuilding on a corrected premise** — a component is solving the wrong
+  problem; redesign it from the premise up rather than patch it in place.
+- **Designing the conspicuous absence** — the thing the repo needs and nobody
+  has built, where the hard part is the design, not the typing.
+- **Pre-empting the second-order consequence** — restructure now for where
+  the repo is clearly heading, before today's reasonable decision bites.
+
+Noticing is raw material here, not the product: an observation with no task
+attached is trivia. Convert what only you can see into what only you can do,
+or drop it.
 
 ## How to work
 
-Three phases. The first is delegable; the second is not.
-
-1. **Scout — spend cheap tokens, save your context.** For anything but a small
-   repo, fan out subagents (cheaper models are fine) to map purpose, structure,
-   conventions, and history — `git log` tells you what the author values and
-   struggles with. Read yourself only the load-bearing files the maps point to.
-   On a small repo, just read everything.
-2. **Judge — the part only you can do. Do not delegate it.** Think at full
-   depth about the highest-leverage, non-obvious observations, and apply the
-   filter ruthlessly — expect to discard most candidates. Do not trust
-   self-assessment here: mid-read, every observation feels only-you. The
-   baseline is mandatory — launch several scouts in parallel (cheaper models),
-   each asked for *its* best insights about the repo and handed the filter
-   categories above; the union of their lists is the baseline, and anything
-   on it is discarded. One scout is one noisy sample; several make the
-   baseline strong and the surviving delta honest. Survivors
-   tend to come less from out-reasoning the scout on the same text than from
-   wider scope: evidence outside the repo (how it is actually installed,
-   deployed, used) and turning the repo's own stated principles back on
-   itself.
-3. **Ground.** Every surviving insight must point at concrete evidence — files,
-   lines, commits, or a precise absence ("there is no X anywhere under Y").
-   An insight you cannot ground is an opinion; cut it or label it as one.
+1. **Scout — spend cheap tokens, save your context.** For anything but a
+   small repo, fan out subagents (cheaper models are fine) to map purpose,
+   structure, conventions, and history — `git log` tells you what the author
+   values and struggles with. Read yourself only the load-bearing files the
+   maps point to. On a small repo, just read everything.
+2. **Judge — the part only you can do. Do not delegate it.** Generate
+   candidate tasks and apply the filter ruthlessly — expect to discard most.
+   Do not trust self-assessment: mid-read, every candidate feels
+   frontier-worthy. The baseline is mandatory — launch several scouts in
+   parallel (cheaper models), each asked what tasks *it* would propose and
+   could carry out on this repo; the union of their lists is the baseline,
+   and anything on it — or anything they could plainly execute — is
+   discarded. One scout is one noisy sample; several make the baseline
+   strong and the surviving delta honest.
+3. **Ground.** Every surviving task must point at concrete evidence that the
+   repo needs it — files, lines, commits, or a precise absence ("there is no
+   X anywhere under Y") — plus a concrete reason the execution needs the
+   frontier. A task you cannot ground is an ambition; cut it.
 
 ## Output
 
-Three to five insights, ranked by leverage. For each: the claim in one
-sentence, the evidence, why it matters, and why a routine review would have
-missed it. If fewer than three survive the filter, say so — a short honest list
-beats a padded one. Deliver in the user's language.
-
-End each insight with **the task it unlocks** — the piece of work the user
-should hand back to *you*, stated so that acting costs one word ("do 2").
-The filter applies to the doing as much as the seeing: if a mid-tier model
-could execute the follow-up correctly, say so and mark it as delegation
-fodder — it is not the point. The tasks worth listing are the ones where
-execution itself needs the frontier: resolving the tension across the whole
-repo at once, prototyping the alternative premise, designing the thing whose
-absence you spotted. An insight is what only you can see; the task is what
-only you can do.
+Three to five task pitches, ranked by leverage. For each: what you would do
+in one sentence, the evidence the repo needs it, why nothing cheaper could
+deliver it, and what "done" looks like. Number them so greenlighting costs
+the human one word ("do 2"). If fewer than three survive the filter, say so —
+a short honest list beats a padded one. Deliver in the user's language.
 
 ## Notes
 
-- This skill is deliberately thin. Frontier models degrade when over-scripted;
-  the skill states the goal and the filter and trusts your judgment for the
-  rest. When maintaining it, resist adding steps.
+- This skill is deliberately thin. Frontier models degrade when
+  over-scripted; the skill states the goal and the filter and trusts your
+  judgment for the rest. When maintaining it, resist adding steps.
 - If you are *not* the most capable model available to the user, say so and
   suggest running this where the frontier is.
-- Don't execute a task until the user picks one. When they do, deliver the
-  result only you could have made — the whole-repo resolution of the tension,
-  not the local patch a mid-tier model would write. If mid-execution the task
-  turns out to be delegable after all, say so instead of burning frontier
-  tokens on it.
+- Execute nothing until the human picks. If mid-execution a task turns out
+  to be delegable after all, say so instead of burning frontier tokens on it.
