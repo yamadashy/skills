@@ -1,6 +1,6 @@
 ---
 name: only-you
-description: "Propose the tasks on a repository that only a frontier-tier model can execute — the work a mid-tier model or a routine engineer would fail at or do shallowly. The deliverable is a numbered pitch list ('I can do this here, and nothing cheaper can') for the human to greenlight. Triggers on: 'what could only you do in this repo', 'only-you', 'find frontier-worthy tasks', 'what work is worth handing to you', or when the user wants to know what to give the most capable model available."
+description: "Propose the tasks on a repository that only a frontier-tier model can execute — the work the model one tier below or a routine engineer would fail at or do shallowly. The deliverable is a numbered pitch list ('I can do this here, and nothing cheaper can') for the human to greenlight. Triggers on: 'what could only you do in this repo', 'only-you', 'find frontier-worthy tasks', 'what work is worth handing to you', or when the user wants to know what to give the most capable model available."
 ---
 
 # Only You
@@ -15,9 +15,10 @@ do.
 
 ## The filter
 
-A task qualifies only if it survives this question: **would a mid-tier model,
-or a competent engineer with enough time, have delivered essentially the same
-result?** If yes, discard it — that is delegation fodder, not a pitch. What
+A task qualifies only if it survives this question: **would the model one
+tier below you, or a competent engineer with enough time, have delivered
+essentially the same result?** If yes, discard it — that is delegation
+fodder, not a pitch. What
 survives usually looks like:
 
 - **Resolving a cross-cutting tension** — two decisions that each make sense
