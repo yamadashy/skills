@@ -15,7 +15,7 @@ Bundled in this repository — installed together by the command above.
 | Category | Skill | Description |
 | --- | --- | --- |
 | Sub-agent | [claude-exec](skills/claude-exec/SKILL.md) | Delegate a task to the Claude Code CLI as a sub-agent. |
-| Sub-agent | [codex-exec](skills/codex-exec/SKILL.md) | Delegate a task to the OpenAI Codex CLI as a sub-agent. |
+| Sub-agent | [codex-exec](skills/codex-exec/SKILL.md) | Delegate a task to the OpenAI Codex CLI as a sub-agent, including image generation/editing with GPT-Image-2. |
 | Sub-agent | [antigravity-exec](skills/antigravity-exec/SKILL.md) | Delegate a task to the [Antigravity CLI](https://antigravity.google/docs/cli-getting-started) (`agy`) as a sub-agent. |
 | Code review | [claude-review-loop](skills/claude-review-loop/SKILL.md) | Run an iterative Claude review-and-fix loop over a change. |
 | Code review | [codex-review-loop](skills/codex-review-loop/SKILL.md) | Run an iterative Codex review-and-fix loop over a change. |
