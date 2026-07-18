@@ -1,5 +1,5 @@
 ---
-name: renovate-merge
+name: pr-renovate-merge
 description: "Safely batch-merge Renovate's dependency-update PRs in the current repo. Lists open Renovate PRs and runs each through fixed safety gates — author is the Renovate bot with GitHub-verified (signed) commits, the update is non-major, the diff is confined to dependency files and clears a supply-chain scan, the new release is not brand-new (cooldown), CI is green, and the PR is mergeable — then auto-approves and merges only the PRs that clear every gate, holding the rest for manual review. Triggers on: 'merge the renovate PRs', 'merge dependency updates', 'handle renovate PRs', 'process renovate', 'update dependencies via renovate'."
 allowed-tools: Bash(gh pr list:*),Bash(gh pr view:*),Bash(gh pr diff:*),Bash(gh pr checks:*),Bash(gh api:*),Bash(gh repo view:*),Bash(gh pr review:*),Bash(gh pr merge:*),Bash(npm view:*),Bash(curl:*),Bash(grep:*),Bash(python3:*),Bash(sort:*),Bash(wc:*),Read,Grep
 ---
@@ -206,7 +206,7 @@ version, get its publish timestamp and **hold if published within ~3 days**:
 npm view <pkg> time --json            # → look up the new version's ISO timestamp
 
 # Cargo crate (crates.io needs a User-Agent or it 403s)
-curl -s -H "User-Agent: renovate-merge skill" "https://crates.io/api/v1/crates/<crate>/<version>" \
+curl -s -H "User-Agent: pr-renovate-merge skill" "https://crates.io/api/v1/crates/<crate>/<version>" \
   | python3 -c 'import sys,json;print(json.load(sys.stdin)["version"]["created_at"])'
 
 # GitHub Action pin — the action's release date
