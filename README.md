@@ -24,6 +24,7 @@ Bundled in this repository — installed together by the command above.
 | Pull request | [pr-renovate-merge](skills/pr-renovate-merge/SKILL.md) | Batch-merge Renovate dependency PRs safely — gates each on GitHub-verified bot commits, non-major scope, a confined diff + supply-chain scan, release cooldown, green CI, and mergeable state, then auto-approves and merges only the ones that clear every gate. |
 | Insight | [only-you](skills/only-you/SKILL.md) | Propose the tasks on a repository that only a frontier-tier model can execute — scouts with subagents one tier below, discards anything they could also propose or do, and pitches a numbered list for the human to greenlight. |
 | Writing | [readable-japanese](skills/readable-japanese/SKILL.md) | Tune Japanese prose into a readable rhythm — checks phonological clashes, prosody/syntax alignment, and end-of-sentence monotony, without altering meaning. (Japanese content — see CLAUDE.md.) |
+| Writing | [dont-make-me-read](skills/dont-make-me-read/SKILL.md) | Reduce cognitive load in plain-text messages (Slack, DMs, plain-text email) — phone-first ordering and chunking, an ASCII tag vocabulary, and optional script-specific decoration with strict usage rules. |
 | Profile | [about-yamadashy](skills/about-yamadashy/SKILL.md) | A compact profile card for yamadashy (Kazuki Yamada) — load it when an agent needs the author's identity, background, main products, or links. |
 
 Each bundled skill lives under [`skills/<name>/`](skills) with its own `SKILL.md`.
