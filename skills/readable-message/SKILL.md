@@ -34,7 +34,8 @@ early as you can.
    needs to keep reading ("US only — no impact on us"), put it in the first two lines.
 2. **One message, one topic.** Background, timelines, and side questions go to a
    thread reply or a linked doc.
-3. **Chunks of 1-3 lines, separated by blank lines.**
+3. **Chunks of 1-3 lines, separated by blank lines.** A `Key: value` block or a
+   list counts as one chunk, however many lines it has — the rule governs prose.
 4. **Break lines only at semantic boundaries** — after a sentence, or after a major
    clause. Never hard-break mid-sentence to control line width: the client re-wraps
    and produces ragged fragments. (The Semantic Line Breaks spec, sembr.org, reaches
@@ -45,7 +46,11 @@ early as you can.
    (recall).
 7. **Each quotable line carries its own subject.** Thread replies strip surrounding
    context. "$5,000/year" alone is ambiguous; "store operators pay Google $5,000/year"
-   survives being quoted.
+   survives being quoted. Applies to channels and threads; in a 1:1 DM, where lines
+   are read in sequence, this rule may yield to tone.
+8. **Prefer absolute dates over relative ones.** Messages are read later than they
+   are sent and resurface in search: "next Wednesday" rots, "Wed 11/26" does not.
+   If the calendar date is not known, keep the relative wording rather than guess.
 
 Evidence grades, so the skill stays honest about what it knows:
 
@@ -53,7 +58,7 @@ Evidence grades, so the skill stays honest about what it knows:
 | --- | --- |
 | Chunking (3) | research-backed (working-memory / chunking literature) |
 | First line (1), no mid-sentence breaks (4), length cap (5) | UI constraint — follows mechanically from previews, re-wrapping, collapse |
-| The rest (2, 6, 7) | convention — well-attested in git commit format, RFC style, and plaintext email culture |
+| The rest (2, 6, 7, 8) | convention — well-attested in git commit format, RFC style, and plaintext email culture |
 
 ## Layer 2 — ASCII tag vocabulary
 
@@ -77,7 +82,8 @@ is tolerable to screen readers.
 Section headers, dividers, and bracket labels help desktop scanning and cost
 phone screens and screen readers. Rules of admission:
 
-- **No headers or dividers in a message under ~10 lines.** A blank line already separates.
+- **No headers or dividers in a message under ~10 content lines** (blank lines
+  don't count). A blank line already separates.
 - **A header must cover everything under it**: one section, one topic. A header that
   labels only part of its section breaks scanning for the rest.
 - **Dividers are redundant next to a header plus a blank line.** If you use one,
@@ -130,7 +136,9 @@ arrow. Nothing from Layer 3 was needed — that is the common case.
 
 - For transmission: requests, announcements, status updates, explanations.
   **Not for argumentative or persuasive prose** — this structure dismantles an
-  argument's flow into disconnected assertions.
+  argument's flow into disconnected assertions. Asked to persuade anyway? Reframe
+  it as a transmission: a proposal plus a concrete ask, the few load-bearing facts
+  numbered, and the full case left to a doc, thread, or meeting.
 - **Not for markdown-rendering surfaces** (READMEs, docs, GitHub issues): use real
   markdown there.
 - The failure mode of this style is imitation without discipline: decoration wrapped
