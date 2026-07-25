@@ -1,9 +1,9 @@
 ---
-name: dont-make-me-read
+name: readable-message
 description: Reduce reader cognitive load in plain-text messages — Slack, chat DMs, SNS, plain-text email — where no markdown rendering is available. Phone-first ordering and chunking (self-contained first line, one topic, 1-3-line chunks), an ASCII tag vocabulary, and optional script-specific decoration with strict usage rules. Use when writing or rewriting a chat message, announcement, request, or notification, or when asked to "make this message readable/scannable", "format this for Slack/DM", or shown a wall-of-text message. Not for surfaces that render markdown, and not for argumentative prose.
 ---
 
-# Don't make me read
+# Readable plain-text messages
 
 ## Foundation
 
@@ -146,6 +146,6 @@ These conventions are described, not invented, following long-lived plain-text c
 git commit format (summary line, blank line, body); TODO/FIXME code-comment tags;
 RFC 2119 capitalized keywords and man-page section headers; setext (1992) →
 Markdown, whose stated "single biggest source of inspiration" was plain-text email;
-Semantic Line Breaks (sembr.org). The name nods to Steve Krug's *Don't Make Me
-Think* — the same demand, made of messages instead of interfaces: the reader
-should get it by looking, not by reading.
+Semantic Line Breaks (sembr.org). Steve Krug's *Don't Make Me Think* makes the
+same demand of interfaces that this skill makes of messages: the reader should
+get it by looking, not by working.
