@@ -37,8 +37,11 @@ messaging, which is an inference, and says so.
 - **Bohns, V. K. (2016).** (Mis)Understanding Our Influence Over Others.
   *Current Directions in Psychological Science*, 25(2).
   Aggregates studies in which participants made requests of **>14,000 strangers**.
-  Mean underestimation of compliance: **48%**. Mechanism: requesters fail to
-  appreciate how socially costly refusal feels.
+  Mean underestimation of compliance: **48%** — a relative shortfall against the
+  actual compliance rate, not 48 percentage points; the skill's "by roughly half"
+  is that same figure in words, and neither should be read as a point estimate for
+  any one request.  Mechanism: requesters fail to appreciate how socially costly
+  refusal feels.
   Extensions: cross-cultural (Bohns et al. 2011, *JESP* — predicted 13.4 asks
   needed vs 7.5 actual); closeness as moderator (Deri, Stein & Bohns 2019 — smaller
   but present for friends); persists after an initial refusal (Newark, Flynn &
@@ -85,27 +88,39 @@ messaging, which is an inference, and says so.
   persuasive than you think over email. *Journal of Experimental Social Psychology*.
   45 participants each asked 10 strangers (450 requests) with an identical script.
   Face-to-face requests were **34× more effective**; both groups predicted ~50%
-  success. Single study, strangers only, not independently replicated. The skill
-  presents it as a strong but singular result and explicitly refuses to let it
-  override a user's stated channel.
+  success. Single study, strangers only, not independently replicated. **The
+  comparison is face-to-face vs email, not synchronous vs asynchronous** — phone
+  and video were not tested, and an earlier draft of the skill over-generalised
+  this to "synchronous beats text" and to recommending a call. Corrected. The
+  skill presents it as a strong but singular result and explicitly refuses to let
+  it override a user's stated channel.
 
 - **Behavioural Insights Team (2014).** EAST: Four Simple Ways to Apply
   Behavioural Insights.
   "Easy" — friction reduction — is presented there as the most consistently
   effective element, and this is consistent with the defaults literature generally.
+  **EAST is a practitioner framework, not a meta-analysis that put behavioural
+  levers on a common metric**, so the skill no longer calls friction reduction
+  "the most reliably effective lever available"; it says practitioners rely on it
+  most. Graded as craft.
   *Removed:* an earlier draft cited a "63% → 81%" UK pension auto-enrolment figure.
   It could not be traced to BIT's report or to a DWP evaluation and appears only in
   secondary decks. No substitute figure is asserted here.
 
-- **Sheeran, P., Listrom, O., & Gollwitzer, P. M. (2024).** Extension of the
-  implementation-intentions meta-analysis to 642 tests: **d = .27–.66** depending
-  on plan format and motivational context.
-  **Gollwitzer, P. M., & Sheeran, P. (2006).** *Advances in Experimental Social
+- **Gollwitzer, P. M., & Sheeran, P. (2006).** *Advances in Experimental Social
   Psychology*, 38, 69–119. 94 independent tests, >8,000 participants, d = .65
   (95% CI 0.6–0.7). Domain-specific estimates are lower (Presseau et al. 2017:
   d ≈ .14–.37 for objectively measured health behaviour; Adriaanse et al. 2011:
-  d = .51 adding healthy foods, .29 reducing unhealthy eating).
-  The skill leads with the 2024 range; .65 is the upper end, not the average.
+  d = .51 adding healthy foods, .29 reducing unhealthy eating). Hence the
+  .27–.66 range the skill quotes; .65 is the upper end, not the average.
+  *Bibliographic note:* an earlier draft led with "Sheeran, Listrom & Gollwitzer
+  2024, 642 tests". Title, journal and DOI for that extension could not be
+  confirmed here, so the skill now leads with the 2006 meta-analysis, which can be.
+  **Construct gap, now stated in the skill:** an implementation intention is an
+  if–then plan the *actor* forms for their own behaviour. A sender writing
+  "reply by Thursday" into a request is not that, and this literature does not
+  measure it. The concreteness advice in Layer 2 is craft; the effect size is
+  background, not its warrant.
 
 ## Layer 3 — removing barriers
 
@@ -200,10 +215,12 @@ messaging, which is an inference, and says so.
   agreement, subjectivity, positive emotion); Wikipedia field data showing
   receptive posts predict fewer personal attacks; validated "receptiveness recipe".
   **Why the preference:** F. Gino is a co-author on the 2020 paper and has a
-  concluded research-misconduct finding in other work. The skill applies the same
-  standard here as to Grant & Gino (2010) — the difference is that the construct
-  survives independently in the 2024 paper, so it is retained with the citation
-  moved rather than excluded. Tool: receptiveness.net.
+  concluded research-misconduct finding in other work. The construct is carried by
+  the 2024 paper, which does not have her as a co-author — but note what that is
+  and is not: Minson, Yeomans and Collins are authors of both, so this is a
+  **same-team follow-up, not an independent replication**. An earlier draft said
+  the construct "survives independently"; it does not, and no independent
+  replication was located. Tool: receptiveness.net.
 
 - **Santoro, E., Broockman, D., Kalla, J., & Porat, R. (2025).** Listen for a
   change? A longitudinal field experiment on listening's potential to enhance
@@ -228,8 +245,12 @@ messaging, which is an inference, and says so.
   50 studies from 25 articles, 127 effect sizes, **N = 9,601**. Feeling heard had a
   significant effect on all outcomes analysed; strongest for the speaker's
   perceptions of the listener — relatedness (k = 5, r = .62) and trust (k = 5,
-  r = .68). Moderator analysis: **stronger in workplace than political contexts**,
-  and the underlying studies were not conducted in political contexts.
+  r = .68). Those two headline correlations rest on **k = 5 studies each**.
+  *Unresolved:* notes taken here record both a moderator result — stronger in
+  workplace than political contexts — and a statement that the included studies
+  were not conducted in political contexts. Those cannot both be right, and the
+  discrepancy was not resolvable from available sources, so the skill relies on
+  neither and makes no context comparison.
   *Correction:* an earlier draft attributed this meta-analysis to Itzchakov &
   Kluger. They are not the authors.
 - **Itzchakov, G., Kluger, A. N., & Castro, D. R. (2017).** I Am Aware of My
@@ -298,6 +319,11 @@ checking.
   Message processing (2008, *Communication Studies*; 42 effect sizes, N = 6,378):
   gain-framed messages produce *slightly greater* engagement — the opposite of the
   theoretical prediction.
+  **Scope of the exclusion:** what fails is loss *framing as a lever* — choosing
+  loss wording because it is supposed to work better. Stating a real downside is a
+  different act and the admission rule requires it: a cost that decides the
+  listener's answer may not be omitted. The skill now says this in the table,
+  because the two rules read as contradictory otherwise.
 
 - **"But you are free" (BYAF).** Carpenter (2013), *Communication Studies*, 42
   studies, reported it effective. A preregistered re-examination
@@ -321,14 +347,15 @@ checking.
   effect sizes was located. Related: "returnable reciprocity" outperforms standard
   gifts, but its authors note it works via guilt and imposes psychological costs.
 
-- **Pre-emptive gratitude.** Standard citation: Grant, A. M., & Gino, F. (2010),
-  "A little thanks goes a long way", *JPSP*, 98(6), 946–955. Gino was found by
-  Harvard Business School to have committed research misconduct — a **concluded**
-  finding, tenure revoked, not an open investigation — in other work; her
-  defamation claims against the Data Colada authors were dismissed. **This paper
-  has not been retracted** (the retracted *JPSP* paper is a different, 2020 one),
-  but it is listed on the Many Co-Authors project for data-provenance review. Not
-  usable as a load-bearing citation in a public skill.
+- **Pre-emptive gratitude ("thanks in advance").** No study of it was located.
+  The paper usually reached for — Grant, A. M., & Gino, F. (2010), "A little
+  thanks goes a long way", *JPSP*, 98(6), 946–955 — manipulates gratitude
+  expressed **after** someone has already helped, which is a different act, so it
+  cannot support the advice whatever its status. An earlier draft of the skill
+  excluded the technique on research-integrity grounds; that was the wrong reason
+  for the right conclusion, and the exclusion now rests on the admission rule
+  alone. (For completeness: the 2010 paper is **not retracted** — the retracted
+  *JPSP* paper is a different, 2020 one.)
 
 - **"Cues of working together."** Carr, P. B., & Walton, G. M. (2014), *JESP*, 53,
   169–184. Five experiments; no independent replication located.

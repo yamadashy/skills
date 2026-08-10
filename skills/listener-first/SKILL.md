@@ -95,7 +95,8 @@ the procedure below. It is a reasonable inference from the biases, not a result.
 1. **You underestimate how often people say yes — by roughly half.** Across
    studies in which participants made requests of more than 14,000 strangers,
    requesters underestimated compliance by an average of 48%, because they do not
-   feel how socially costly refusal is (Flynn & Bohns 2008; Bohns 2016). The error
+   feel how socially costly refusal is (Flynn & Lake 2008 — Lake now publishes as
+   Bohns; Bohns 2016). The error
    persists for friends, for large requests, and after a previous refusal.
    → **Ask, and ask directly rather than hinting.** The most common failure is not
    a badly phrased request; it is a request never made, or softened into a hint
@@ -144,28 +145,34 @@ it for the relationship; don't paste that sentence.
 
 ## Layer 2 — Channel and friction
 
-- **Synchronous beats text by a wide margin.** In a matched-script experiment
-  across 450 requests, face-to-face asks succeeded **34 times** more often than
-  emailed ones — and senders predicted no difference (Roghanizad & Bohns 2017;
-  single study, strangers, not independently replicated).
+- **Asking in person beat asking by email, by a wide margin.** In a matched-script
+  experiment across 450 requests, face-to-face asks succeeded **34 times** more
+  often than emailed ones — and senders predicted no difference (Roghanizad &
+  Bohns 2017; single study, strangers, not independently replicated). The
+  experiment compared those two channels only; phone and video are untested, so
+  do not restate this as "synchronous beats text".
   → If the channel is yours to choose and the ask is important and refusable, ask
-  live. **If the user has already specified the channel, write for that channel**
-  and note in one line that a call would do better. Async teams, time zones, and
-  accessibility are all legitimate reasons text wins; a drafting skill whose best
-  output is "don't send this" is useless.
-- **Remove steps.** Reducing the work between "yes" and done is the most reliably
-  effective behavioral lever available (the "Easy" of the Behavioural Insights
-  Team's EAST framework). Attach the file, pre-fill the form, propose two times
+  in person. **If the user has already specified the channel, write for that
+  channel** and note in one line that the same ask made in person is the stronger
+  version. Async teams, time zones, and accessibility are all legitimate reasons
+  text wins; a drafting skill whose best output is "don't send this" is useless.
+- **Remove steps.** Reducing the work between "yes" and done is the lever
+  practitioners rely on most (the "Easy" of the Behavioural Insights Team's EAST
+  framework — a practitioner framework, not a meta-analysis that ranked levers
+  against each other). Attach the file, pre-fill the form, propose two times
   instead of asking for availability, send the draft instead of the request to
   write one. Do the work yourself where you can, rather than promising it.
-- **Make the action concrete: who does what, when, where.** If–then plans of that
-  shape raise goal attainment by **d = .27–.66** depending on format and context
-  (Sheeran, Listrom & Gollwitzer 2024, 642 tests; the widely quoted d = .65 from
-  the 94-study 2006 meta-analysis is the upper end, not the average).
-  "Let me know what you think" is not an action. "Reply yes or no by Thursday" is
-  — but only propose a date that is real. A deadline invented to create
-  concreteness fails the admission rule; use the coarsest true unit instead
-  ("this week", "before the release").
+- **Make the action concrete: who does what, by when.** "Let me know what you
+  think" is not an action. "Reply yes or no by Thursday" is — but only propose a
+  date that is real. A deadline invented to create concreteness fails the
+  admission rule; use the coarsest true unit instead ("this week", "before the
+  release").
+  The adjacent evidence is implementation intentions: if–then plans raise goal
+  attainment at **d = .27–.66** depending on format and context (Gollwitzer &
+  Sheeran 2006, 94 tests, d = .65 at the upper end; domain-specific and later
+  estimates run lower). Mind the gap — those are plans the *actor* forms for
+  themselves, not a date a sender writes into a request. The advice here is craft;
+  the effect size is only why concreteness is worth believing in at all.
 - **Give the ask one owner.** A request addressed to a group diffuses until nobody
   holds it. For announcements, where a group *is* the audience, name the owner of
   each action instead.
@@ -245,8 +252,9 @@ trust in and relatedness to the listener (Vogel & Gastil 2025, meta-analysis:
 50 studies, 127 effect sizes, N = 9,601 overall; trust and relatedness r > .60,
 but on k = 5 studies each). Experimentally, high-quality listening lowers
 defensive processing and reduces attitude extremity (Itzchakov, Kluger & Castro
-2017). The meta-analysis found stronger effects in workplace than political
-contexts, and its underlying studies were not political. Practically: a reply that
+2017). The meta-analysis also reports a context moderator, but its description of
+the included studies cannot be reconciled with it, so no context comparison is
+relied on here. Practically: a reply that
 first restates their position in a form they would accept outperforms one that
 opens with the rebuttal — for the relationship, if not for their position.
 
@@ -269,8 +277,14 @@ with a forced choice, so a narrow base). Lead with the bad news. Documented catc
 doing so reduces worry, and the relief slightly reduces motivation to act, so keep
 the required action attached to the bad news rather than deferring it.
 Carve-out: if the recipient needs context to act safely, give **at most one
-sentence** of it first, then the bad news. For a death or a layoff, ordering is not
-a technique question — do not apply this rule.
+sentence** of it first, then the bad news.
+
+For a death, a layoff, or a serious medical or safety event, this stops being an
+ordering question and nothing else in this skill applies either. The branch is:
+say it plainly and early in the fewest words that are still complete; give the
+reason once, without justification or softening; then what happens next and who
+they can talk to. Anything with employment, medical or legal consequence goes to
+whoever owns it before it is sent.
 
 **Apology.** Six components, unequal, and more of them is better (Lewicki, Polin &
 Lount 2016, two studies). By measured weight:
@@ -285,8 +299,10 @@ Lount 2016, two studies). By measured weight:
 
 **Liability carve-out:** for customer incidents, HR matters, safety events, or
 anything with contractual or legal exposure, an admission of responsibility is not
-yours to draft unilaterally. Write it, then say plainly that the wording needs
-whoever owns the liability.
+yours to draft unilaterally — and a sendable draft that contains one will get sent.
+So do not produce one. Write the facts that are yours to state, leave the
+responsibility sentence as an explicit placeholder, and say above the draft that
+the placeholder is for whoever owns the liability to fill.
 
 ## Layer 5 — Wording, last and least
 
@@ -310,11 +326,11 @@ Reach here only after 1–4, and only for messages where it matters.
 
 | Technique | Why not |
 | --- | --- |
-| Loss framing ("don't miss out", "you'll lose X") | O'Keefe & Jensen (2006, *Communication Yearbook*; 165 effect sizes, N = 50,780): loss-framed appeals are not generally more persuasive. The one significant advantage found (2009, *Journal of Communication*, 53 studies) is r ≈ .04 and confined to breast-cancer detection messages |
+| Loss framing ("don't miss out", "you'll lose X") | O'Keefe & Jensen (2006, *Communication Yearbook*; 165 effect sizes, N = 50,780): loss-framed appeals are not generally more persuasive. The one significant advantage found (2009, *Journal of Communication*, 53 studies) is r ≈ .04 and confined to breast-cancer detection messages. **This bans reaching for loss wording as a lever — not stating a real downside.** A cost the listener needs in order to decide is required by the admission rule; write it plainly, as a fact rather than as a threat |
 | "But you are free to refuse" | A 2023 preregistered re-examination of 52 experiments (N = 19,528) found the effect vanishes in the low-risk-of-bias subset: g = 0.11, 95% CI [−0.18, 0.40] |
 | A throwaway reason ("because I need to") | Holds only for trivially small requests; collapses for anything substantial (Langer, Blank & Chanowitz 1978 — the popular retelling drops the boundary condition) |
 | A small gift or favour beforehand | The obligation is largely gone within a week (Burger et al. 1997) |
-| "Thanks in advance" and other pre-emptive gratitude | The standard citation is unusable — a co-author has a concluded research-misconduct finding in other work and the paper is under data-provenance review. It also reads as presuming consent, which fails the admission rule |
+| "Thanks in advance" and other pre-emptive gratitude | No study tests it. The paper usually cited measures gratitude expressed *after* someone helped, which is a different act; nothing supports thanking someone for a thing they have not agreed to. Excluded on the admission rule alone: it books the yes before they give it |
 | Manufactured scarcity, urgency, or social proof | Fails the admission rule outright |
 
 ## Evidence grades
@@ -329,14 +345,15 @@ an independently measured result, and should be treated as craft.
 | Wording effects are smaller still | **Inference** — no cited study manipulates wording |
 | Requesters underestimate compliance | Established (>14,000 requests) — caveat: largely one research programme |
 | Senders overestimate how well they were understood | Established (multiple paradigms, incl. a 5-experiment email study) |
+| Senders argue from their own values, not the listener's | Supported but narrow — a base rate under 10%, measured on US partisans writing political essays. That reframing to the listener's values then *works* is a separate and weaker claim |
 | Repetition raises judged truth | Established (51-study meta-analysis) — cited as a hazard, not a tool |
 | Non-repetition fluency raises judged truth | Supported, smaller, less consistently replicated |
 | Jargon reduces persuasion, not just comprehension | Supported (one well-powered experiment + follow-ups) |
 | Formal beats informal | Supported (N = 67,632, 3 field experiments) — institution-to-citizen only |
 | Numeric uncertainty is safe; verbal vagueness is not | Supported (5 experiments) — the field arm was null; very wide ranges are an exception |
 | Hedges cost credibility | Supported but dated (1998 book-chapter meta-analysis, largely courtroom-derived) |
-| Channel effect (in person ≫ email) | Supported (single 450-request experiment, strangers; large effect, unreplicated) |
-| If–then plans raise follow-through | Established (642 tests) at d = .27–.66 |
+| Channel effect (in person ≫ email) | Supported (single 450-request experiment, strangers; large effect, unreplicated) — face-to-face vs email only; phone and video untested |
+| If–then plans raise follow-through | Established (94 tests, d = .65; broader estimates .27–.66) — but for plans the actor forms for themselves; a date written into someone else's request is an **inference** |
 | Feeling heard predicts trust and relatedness | Supported (meta-analysis, N = 9,601) |
 | Receptive language changes the other side's position | **Not supported** — the one field experiment found a null |
 | Bad news first; responsibility-first apologies | Supported, narrow base (one lab study / two studies) |
@@ -349,7 +366,8 @@ When in doubt, use the higher-graded layer and stop.
 
 - If the message needed them: did I write the four listener lines, and keep them
   out of the message?
-- If there is an ask: is it stated as an ask, with one owner, and a real date?
+- If there is an ask: is it stated as an ask, with one owner? If timing matters, is
+  the date a real one — and written as a wish where it is a wish?
 - Is this the right channel — and if I couldn't choose it, did I say so once?
 - What work am I leaving them that I could do myself?
 - Any jargon, any nesting? Any casualness I mistook for clarity?
