@@ -1,9 +1,9 @@
 ---
-name: listener-first
-description: Shape what a message says around the listener's state rather than the sender's. Corrects the measured sender biases first (underestimating that people say yes, overestimating how well you were understood, arguing from your own values), then channel and friction, then barriers to comprehension, and wording last. Load-bearing claims carry an evidence grade, and popular techniques that the evidence does not support — or that fail an honesty test — are named and excluded. Use when drafting or revising a spoken or written request, proposal, explanation, bad news, apology, or a reply in a disagreement — and on "make this more persuasive", "how should I phrase this", "they'll say no", "this didn't land". Changes substance and stance — not layout, not scannability, not prose rhythm.
+name: recipient-first
+description: Shape what a message says around the recipient's state rather than the sender's. Corrects the measured sender biases first (underestimating that people say yes, overestimating how well you were understood, arguing from your own values), then channel and friction, then barriers to comprehension, and wording last. Load-bearing claims carry an evidence grade, and popular techniques that the evidence does not support — or that fail an honesty test — are named and excluded. Use when drafting or revising a spoken or written request, proposal, explanation, bad news, apology, or a reply in a disagreement — and on "make this more persuasive", "how should I phrase this", "they'll say no", "this didn't land". Changes substance and stance — not layout, not scannability, not prose rhythm.
 ---
 
-# listener-first
+# recipient-first
 
 ## Foundation
 
@@ -33,14 +33,14 @@ order. Most messages are finished in Layer 1 or 2.
 
 **Proportionality.** Skip to the checklist if the message is under about three
 lines *and* carries no refusable ask, or if it goes to someone you talk to daily
-about routine matters. A four-line listener analysis in front of a nine-word Slack
+about routine matters. A four-line recipient analysis in front of a nine-word Slack
 message is a failure of this skill, not an application of it. The skip does not
 apply to apologies, bad news, or anything crossing a power difference, however
 short — those keep the full pass.
 
 ## Admission rule — the full-disclosure test
 
-> **Would the listener, knowing exactly how this message was constructed, still
+> **Would the recipient, knowing exactly how this message was constructed, still
 > think the ask was fair?**
 
 Any technique that fails this is out. Reframing which true fact leads is in;
@@ -78,7 +78,7 @@ exclusivity line, an invented deadline — write the honest version, and say in 
 line which requested element you left out and why. Do not silently comply, and do
 not refuse to produce anything.
 
-**Never invent the listener's motives, or the facts of the incident.** If you do
+**Never invent the recipient's motives, or the facts of the incident.** If you do
 not know what the recipient cares about, what they are busy with, or what they
 already know, ask the person you are drafting for. If asking is not possible —
 non-interactive run, or the user genuinely does not know — then **draft anyway,
@@ -126,10 +126,10 @@ the procedure below. It is a reasonable inference from the biases, not a result.
    disagrees, fewer than 10% of people spontaneously appeal to that person's
    values rather than their own (Feinberg & Willer 2019; base rate measured on US
    partisans writing persuasive essays).
-   → **State the case in terms the listener already holds**, not a repackaging of
+   → **State the case in terms the recipient already holds**, not a repackaging of
    why you hold it.
 
-**Procedure — before drafting.** Write four lines about the listener. Keep them
+**Procedure — before drafting.** Write four lines about the recipient. Keep them
 out of the message; show them to the user above the draft.
 
 - What they already know, and what they don't.
@@ -249,7 +249,7 @@ receptiveness.net.
 
 **Listening.** Feeling heard has a substantial association with how much the
 speaker trusts, and feels connected to, the person who listened to them — in this
-section that person is you, not the listener the rest of this skill is about
+section that person is you, not the recipient the rest of this skill is about
 (Vogel & Gastil 2025, meta-analysis: 50 studies, 127 effect sizes, N = 9,601
 overall; trust and relatedness r > .60, but on k = 5 studies each).
 Experimentally, high-quality listening lowers defensive processing and reduces
@@ -328,7 +328,7 @@ Reach here only after 1–4, and only for messages where it matters.
 
 | Technique | Why not |
 | --- | --- |
-| Loss framing ("don't miss out", "you'll lose X") | O'Keefe & Jensen (2006, *Communication Yearbook*; 165 effect sizes, N = 50,780): loss-framed appeals are not generally more persuasive. The one significant advantage found (2009, *Journal of Communication*, 53 studies) is r ≈ .04 and confined to breast-cancer detection messages. **This bans reaching for loss wording as a lever — not stating a real downside.** A cost the listener needs in order to decide is required by the admission rule; write it plainly, as a fact rather than as a threat |
+| Loss framing ("don't miss out", "you'll lose X") | O'Keefe & Jensen (2006, *Communication Yearbook*; 165 effect sizes, N = 50,780): loss-framed appeals are not generally more persuasive. The one significant advantage found (2009, *Journal of Communication*, 53 studies) is r ≈ .04 and confined to breast-cancer detection messages. **This bans reaching for loss wording as a lever — not stating a real downside.** A cost the recipient needs in order to decide is required by the admission rule; write it plainly, as a fact rather than as a threat |
 | "But you are free to refuse" | A 2023 preregistered re-examination of 52 experiments (N = 19,528) found the effect vanishes in the low-risk-of-bias subset: g = 0.11, 95% CI [−0.18, 0.40] |
 | A throwaway reason ("because I need to") | Holds only for trivially small requests; collapses for anything substantial (Langer, Blank & Chanowitz 1978 — the popular retelling drops the boundary condition) |
 | A small gift or favour beforehand | The obligation is largely gone within a week (Burger et al. 1997) |
@@ -347,7 +347,7 @@ an independently measured result, and should be treated as craft.
 | Wording effects are smaller still | **Inference** — no cited study manipulates wording |
 | Requesters underestimate compliance | Established (>14,000 requests) — caveat: largely one research programme |
 | Senders overestimate how well they were understood | Established (multiple paradigms, incl. a 5-experiment email study) |
-| Senders argue from their own values, not the listener's | Supported but narrow — a base rate under 10%, measured on US partisans writing political essays. That reframing to the listener's values then *works* is a separate and weaker claim |
+| Senders argue from their own values, not the recipient's | Supported but narrow — a base rate under 10%, measured on US partisans writing political essays. That reframing to the recipient's values then *works* is a separate and weaker claim |
 | Repetition raises judged truth | Established (51-study meta-analysis) — cited as a hazard, not a tool |
 | Non-repetition fluency raises judged truth | Supported, smaller, less consistently replicated |
 | Jargon reduces persuasion, not just comprehension | Supported (one well-powered experiment + follow-ups) |
@@ -366,7 +366,7 @@ When in doubt, use the higher-graded layer and stop.
 
 ## Checklist
 
-- If the message needed them: did I write the four listener lines, and keep them
+- If the message needed them: did I write the four recipient lines, and keep them
   out of the message?
 - If there is an ask: is it stated as an ask, with one owner? If timing matters, is
   the date a real one — and written as a wish where it is a wish?
@@ -379,7 +379,7 @@ When in doubt, use the higher-graded layer and stop.
 
 ## Output
 
-Return the draft. Above it, put the four listener lines (omit them if the
+Return the draft. Above it, put the four recipient lines (omit them if the
 proportionality rule applied) and — if you had to assume anything — the assumption
 block. Below it, one line each for anything the user asked for that you left out,
 and why. If the user's existing draft already clears the checklist, say so and
@@ -392,11 +392,11 @@ change nothing; no rewrite is a valid result.
 - **Not for visual formatting** — line breaks, chunking, headers, symbols. It does
   prescribe *rhetorical* ordering (bad news first, their position before your
   rebuttal); it says nothing about layout.
-- **One named listener, or a bounded group you know** (a team channel, a named
+- **One named recipient, or a bounded group you know** (a team channel, a named
   set of customers). For a bounded group, the four lines are written about the
   group's shared state, and the one-owner rule becomes "name the owner of each
   action". Marketing copy, fundraising, cold outreach and public posts fall
-  outside: there is no listener whose state you can know. Say so rather than
+  outside: there is no recipient whose state you can know. Say so rather than
   inventing a persona.
 - **Sender side only.** How to decline, how to receive criticism, and how to
   respond to a manipulative message are outside this.
@@ -407,7 +407,7 @@ change nothing; no rewrite is a valid result.
   grammaticalized politeness are not covered — the register layer is a local
   question everywhere, and especially there.
 - **Not a rescue for a bad ask.** If the request is genuinely against the
-  listener's interest and you have nothing to offer, no framing fixes it. Say what
+  recipient's interest and you have nothing to offer, no framing fixes it. Say what
   it is, or don't ask.
 - **Diminishing returns are real.** Once Layers 1 and 2 are done, the remaining
   layers are worth much less. Do not spend an hour on Layer 5.

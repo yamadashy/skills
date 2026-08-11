@@ -322,7 +322,7 @@ checking.
   **Scope of the exclusion:** what fails is loss *framing as a lever* — choosing
   loss wording because it is supposed to work better. Stating a real downside is a
   different act and the admission rule requires it: a cost that decides the
-  listener's answer may not be omitted. The skill now says this in the table,
+  recipient's answer may not be omitted. The skill now says this in the table,
   because the two rules read as contradictory otherwise.
 
 - **"But you are free" (BYAF).** Carpenter (2013), *Communication Studies*, 42
