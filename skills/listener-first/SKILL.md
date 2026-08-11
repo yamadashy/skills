@@ -1,6 +1,6 @@
 ---
 name: listener-first
-description: Build a message from the listener's state rather than the sender's. Corrects the measured sender biases first (underestimating that people say yes, overestimating how well you were understood, arguing from your own values), then channel and friction, then barriers to comprehension, and wording last. Load-bearing claims carry an evidence grade, and popular techniques that the evidence does not support — or that fail an honesty test — are named and excluded. Use when drafting or revising a request, proposal, explanation, bad news, apology, or a reply in a disagreement — and on "make this more persuasive", "how should I phrase this", "they'll say no", "this didn't land". Not for visual formatting.
+description: Shape what a message says around the listener's state rather than the sender's. Corrects the measured sender biases first (underestimating that people say yes, overestimating how well you were understood, arguing from your own values), then channel and friction, then barriers to comprehension, and wording last. Load-bearing claims carry an evidence grade, and popular techniques that the evidence does not support — or that fail an honesty test — are named and excluded. Use when drafting or revising a spoken or written request, proposal, explanation, bad news, apology, or a reply in a disagreement — and on "make this more persuasive", "how should I phrase this", "they'll say no", "this didn't land". Changes substance and stance: not layout, not scannability, not prose rhythm.
 ---
 
 # listener-first
@@ -247,16 +247,18 @@ receptiveness.net.
 > conversation* — which is well supported — and not as a lever on the other
 > person's position.
 
-**Listening.** Feeling heard has a substantial association with the speaker's
-trust in and relatedness to the listener (Vogel & Gastil 2025, meta-analysis:
-50 studies, 127 effect sizes, N = 9,601 overall; trust and relatedness r > .60,
-but on k = 5 studies each). Experimentally, high-quality listening lowers
-defensive processing and reduces attitude extremity (Itzchakov, Kluger & Castro
-2017). The meta-analysis also reports a context moderator, but its description of
-the included studies cannot be reconciled with it, so no context comparison is
-relied on here. Practically: a reply that
-first restates their position in a form they would accept outperforms one that
-opens with the rebuttal — for the relationship, if not for their position.
+**Listening.** Feeling heard has a substantial association with how much the
+speaker trusts, and feels connected to, the person who listened to them — in this
+section that person is you, not the listener the rest of this skill is about
+(Vogel & Gastil 2025, meta-analysis: 50 studies, 127 effect sizes, N = 9,601
+overall; trust and relatedness r > .60, but on k = 5 studies each).
+Experimentally, high-quality listening lowers defensive processing and reduces
+attitude extremity (Itzchakov, Kluger & Castro 2017). The meta-analysis also
+reports a context moderator, but its description of the included studies cannot
+be reconciled with it, so no context comparison is relied on here. Practically:
+a reply that first restates their position in a form they would accept
+outperforms one that opens with the rebuttal — for the relationship, if not for
+their position.
 
 **Ten minutes, in person or by phone.** A non-judgmental exchange of personal
 experience shifted entrenched attitudes in about one in ten people, and the shift
