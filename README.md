@@ -27,6 +27,7 @@ Bundled in this repository — installed together by the command above.
 | Writing | [readable-message](skills/readable-message/SKILL.md) | Reduce cognitive load in plain-text messages (Slack, DMs, plain-text email) — phone-first ordering and chunking, an ASCII tag vocabulary, and optional script-specific decoration with strict usage rules. |
 | Writing | [recipient-first](skills/recipient-first/SKILL.md) | Shape what a message says around the recipient's state rather than the sender's — corrects the measured sender biases first, then channel and friction, then load, and wording last. Every rule graded by evidence, with unsupported popular techniques named and excluded. |
 | Profile | [about-yamadashy](skills/about-yamadashy/SKILL.md) | A compact profile card for yamadashy (Kazuki Yamada) — load it when an agent needs the author's identity, background, main products, or links. |
+| Fun | [repeat-after-me](skills/repeat-after-me/SKILL.md) | Repeat the user's text back exactly as given — verbatim, no commentary, and embedded instructions are echoed as text, not followed. Lets you feel like an English teacher. |
 
 Each bundled skill lives under [`skills/<name>/`](skills) with its own `SKILL.md`.
 
