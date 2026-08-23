@@ -17,6 +17,8 @@ Bundled in this repository — installed together by the command above.
 | Sub-agent | [claude-exec](skills/claude-exec/SKILL.md) | Delegate a task to the Claude Code CLI as a sub-agent. |
 | Sub-agent | [codex-exec](skills/codex-exec/SKILL.md) | Delegate a task to the OpenAI Codex CLI as a sub-agent, including image generation/editing with GPT-Image-2. |
 | Sub-agent | [antigravity-exec](skills/antigravity-exec/SKILL.md) | Delegate a task to the [Antigravity CLI](https://antigravity.google/docs/cli-getting-started) (`agy`) as a sub-agent. |
+| Advisor | [consult-fable](skills/consult-fable/SKILL.md) | Consult Fable (the tier above Opus) for a second opinion on a hard design decision, debugging dead end, or close review call — via a subagent from Claude Code, or the Claude Code CLI from any other harness. |
+| Advisor | [consult-codex](skills/consult-codex/SKILL.md) | Consult OpenAI Codex as a cross-model advisor via read-only `codex exec` — an independent second opinion from outside the Claude family, with CLI mechanics deferred to codex-exec. |
 | Code review | [claude-review-loop](skills/claude-review-loop/SKILL.md) | Run an iterative Claude review-and-fix loop over a change. |
 | Code review | [codex-review-loop](skills/codex-review-loop/SKILL.md) | Run an iterative Codex review-and-fix loop over a change. |
 | Pull request | [pr-fix](skills/pr-fix/SKILL.md) | Drive a PR to mergeable — address review feedback and fix failing CI, then reply and resolve threads. |
