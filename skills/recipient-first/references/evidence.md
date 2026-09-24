@@ -30,7 +30,7 @@ plausible-sounding substitute — those removals are noted.
 institution-to-citizen. `SKILL.md` uses them to set a prior for interpersonal
 messaging, which is an inference, and says so.
 
-## Layer 1 — sender biases
+## Where the picture goes wrong — sender biases
 
 - **Flynn, F. J., & Lake (Bohns), V. K. (2008).** If You Need Help, Just Ask:
   Underestimating Compliance With Direct Requests for Help. *JPSP*.
@@ -82,7 +82,19 @@ messaging, which is an inference, and says so.
   Voelkel & Feinberg (2018) is weaker — non-significant interaction in Study 2, no
   control conditions.
 
-## Layer 2 — channel and friction
+## Subtract first
+
+- **Adams, G. S., Converse, B. A., Hales, A. H., & Klotz, L. E. (2021).** People
+  systematically overlook subtractive changes. *Nature*, 592, 258–261.
+  Across eight experiments, people defaulted to searching for additive changes
+  and missed advantageous subtractive ones. Subtraction was found less often when
+  the task did not cue it, when people had only one chance to notice that adding
+  was not working, and under higher cognitive load. The tasks were puzzles,
+  designs and similar problems, not messages; applying it to message revision is
+  an **inference**. The cue itself is the practical lever: asking "what can go?"
+  explicitly is what the experiments show restores subtraction.
+
+## Channel and friction
 
 - **Roghanizad, M. M., & Bohns, V. K. (2017).** Ask in person: You're less
   persuasive than you think over email. *Journal of Experimental Social Psychology*.
@@ -119,10 +131,10 @@ messaging, which is an inference, and says so.
   **Construct gap, now stated in the skill:** an implementation intention is an
   if–then plan the *actor* forms for their own behaviour. A sender writing
   "reply by Thursday" into a request is not that, and this literature does not
-  measure it. The concreteness advice in Layer 2 is craft; the effect size is
+  measure it. The concreteness advice in the "Channel and friction" section is craft; the effect size is
   background, not its warrant.
 
-## Layer 3 — removing barriers
+## Removing barriers
 
 - **Bullock, O. M., Colón Amill, D., Shulman, H. C., & Dixon, G. N. (2019).**
   Jargon as a barrier to effective science communication: Evidence from
@@ -144,8 +156,7 @@ messaging, which is an inference, and says so.
   **Important scoping point:** this is the *repetition-induced* truth effect —
   it measures how much repeating a statement raises its truth rating. It is not a
   measurement of "write more fluently → be believed more". An earlier draft of the
-  skill used it for the latter while simultaneously forbidding repetition in Layer
-  5; that contradiction is now resolved by citing repetition as a hazard and using
+  skill used it for the latter while simultaneously forbidding repetition in the "Wording" section; that contradiction is now resolved by citing repetition as a hazard and using
   separate sources for non-repetition fluency.
   Non-repetition fluency: **Reber, R., & Schwarz, N. (1999)**, Effects of
   perceptual fluency on judgments of truth, *Consciousness and Cognition* (small,
@@ -203,7 +214,7 @@ messaging, which is an inference, and says so.
   consistent with the skill's ownership-vs-confidence distinction ("I think X"
   claims the view; "X, sort of" undermines it).
 
-## Layer 4 — disagreement, listening, bad news, repair
+## Disagreement, listening, bad news, repair
 
 - **Minson, J., Yeomans, M., Collins, H., & Dorison, C. (2024)** — three
   well-powered online studies plus lab and forum data, on conversational
@@ -232,7 +243,7 @@ messaging, which is an inference, and says so.
   manipulation was a live video conversation, so transfer to *written* receptive
   language is an assumption — the skill says so, since it is using the transfer to
   demote a claim.
-  The same experiment supports Layer 5: **the persuasive narrative itself worked
+  The same experiment supports the "Wording" section: **the persuasive narrative itself worked
   and lasted** — roughly 0.30 SD, still ~0.20 SD at five weeks.
   Accordingly the skill grades "receptive language changes the other side's
   position" as not supported, while keeping receptive language for the
@@ -290,7 +301,7 @@ messaging, which is an inference, and says so.
   integrity-based violations. Scenario-based, not field data — hence the skill's
   liability carve-out, which is a legal caution rather than a finding.
 
-## Layer 5 — wording
+## Wording
 
 - **Braddock, K., & Dillard, J. P. (2016).** Meta-analytic evidence for the
   persuasive effect of narratives. *Communication Monographs*, 83(4), 446–467.
@@ -300,9 +311,9 @@ messaging, which is an inference, and says so.
   (An earlier draft glossed r = .2 as "one-fifth of a standard deviation", which
   confuses r with d.) Fictionality results mixed; medium and design did not
   moderate; substantial unexplained heterogeneity remains.
-  Field corroboration: Santoro et al. (2025) — see Layer 4 — found the persuasive
+  Field corroboration: Santoro et al. (2025) — see the "Disagreement, listening, bad news, repair" section — found the persuasive
   narrative arm moved attitudes ~0.30 SD, still ~0.20 SD at five weeks. Narrative
-  is the best-supported item in Layer 5 and the only one with durable field
+  is the best-supported item in the "Wording" section and the only one with durable field
   evidence.
 
 ## Excluded techniques — the dossier
