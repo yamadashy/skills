@@ -26,7 +26,7 @@ Bundled in this repository — installed together by the command above.
 | Pull request | [pr-deps-merge](skills/pr-deps-merge/SKILL.md) | Batch-merge Renovate/Dependabot dependency PRs safely — gates each on GitHub-verified bot commits, non-major scope, a confined diff + supply-chain scan, release cooldown, green CI, and mergeable state, then auto-approves and merges only the ones that clear every gate. |
 | Insight | [only-you](skills/only-you/SKILL.md) | Propose the tasks on a repository that only a frontier-tier model can execute — scouts with subagents one tier below, discards anything they could also propose or do, and pitches a numbered list for the human to greenlight. |
 | Writing | [readable-message](skills/readable-message/SKILL.md) | Reduce cognitive load in plain-text messages (Slack, DMs, plain-text email) — phone-first ordering and chunking, an ASCII tag vocabulary, and optional script-specific decoration with strict usage rules. |
-| Writing | [recipient-first](skills/recipient-first/SKILL.md) | Shape a message around the recipient's state rather than the sender's: picture their head and situation, correct where that picture predictably goes wrong, subtract before adding, and never manipulate. |
+| Writing | [recipient-first](skills/recipient-first/SKILL.md) | Write a message while picturing what is in the recipient's head: what they know, what it costs them, and how it will land. |
 | Profile | [about-yamadashy](skills/about-yamadashy/SKILL.md) | A compact profile card for yamadashy (Kazuki Yamada) — load it when an agent needs the author's identity, background, main products, or links. |
 
 Each bundled skill lives under [`skills/<name>/`](skills) with its own `SKILL.md`.
