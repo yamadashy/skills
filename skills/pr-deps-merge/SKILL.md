@@ -187,12 +187,13 @@ grep -nE '^\+($|[^+])' /tmp/deps-<PR>.diff \
   | grep -iE '"(preinstall|install|postinstall|prepublish|prepublishOnly|prepare|prepack|postpack)"[[:space:]]*:' \
   || echo "→ no install hooks added"
 
-# C3. Hidden / invisible / bidi / tag-block / variation-selector characters on added lines.
+# C3. Hidden / invisible / bidi / tag-block / variation-selector / noncharacter / private-use
+#     characters on added lines.
 #     A bump never needs these; a hit means something is smuggled past your eyes. Needs a
 #     PCRE grep (GNU grep -P, ripgrep, or ugrep — the grep Claude Code ships). For the exhaustive
 #     codepoint class and a decoder, see the pr-vet skill (Step 2d).
 grep -nE '^\+($|[^+])' /tmp/deps-<PR>.diff \
-  | grep -nP '[\x{00AD}\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2060}-\x{2064}\x{2066}-\x{2069}\x{FEFF}\x{FE00}-\x{FE0F}\x{E0000}-\x{E007F}\x{E0100}-\x{E01EF}]'
+  | grep -nP '[\x{00AD}\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2060}-\x{2064}\x{2066}-\x{2069}\x{FEFF}\x{FE00}-\x{FE0F}\x{E0000}-\x{E007F}\x{E0100}-\x{E01EF}\x{E000}-\x{F8FF}\x{FDD0}-\x{FDEF}\x{FFFE}\x{FFFF}\x{F0000}-\x{10FFFF}]'
 case $? in 1) echo "→ no hidden/invisible characters added";; 2) echo "⚠ grep -P unavailable — rerun under ripgrep/ugrep; a clean result is NOT trustworthy until you do";; esac
 ```
 

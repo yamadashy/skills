@@ -141,11 +141,20 @@ grep -nE '^\+($|[^+])' /tmp/pr.diff \
 #     smuggling (U+E0000+ — invisible to humans, read as instructions by an LLM), variation-selector
 #     steganography (U+FE00+ / U+E0100+ — the GlassWorm and os-info-checker-es6 npm vector), invisible
 #     math ops, deprecated format, line/para separators, and C0/C1 control codes. MITRE T1027.018.
+#     Also noncharacters (U+FDD0-FDEF, U+FFFE/FFFF) and private-use code points (U+E000-F8FF,
+#     planes 15-16): no glyph in most fonts, so they vanish in editors and diffs.
 #     Needs a PCRE-capable grep: GNU `grep -P`, ripgrep, or ugrep (the grep Claude Code ships).
 grep -nE '^\+($|[^+])' /tmp/pr.diff \
-  | grep -nP '[\x{0000}-\x{0008}\x{000B}\x{000C}\x{000E}-\x{001F}\x{007F}-\x{009F}\x{00AD}\x{034F}\x{061C}\x{115F}\x{1160}\x{17B4}\x{17B5}\x{180E}\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2028}\x{2029}\x{2060}-\x{2064}\x{2066}-\x{2069}\x{206A}-\x{206F}\x{3164}\x{FE00}-\x{FE0F}\x{FEFF}\x{FFA0}\x{FFF9}-\x{FFFB}\x{1D173}-\x{1D17A}\x{E0000}-\x{E007F}\x{E0100}-\x{E01EF}]'
+  | grep -nP '[\x{0000}-\x{0008}\x{000B}\x{000C}\x{000E}-\x{001F}\x{007F}-\x{009F}\x{00AD}\x{034F}\x{061C}\x{115F}\x{1160}\x{17B4}\x{17B5}\x{180E}\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2028}\x{2029}\x{2060}-\x{2064}\x{2066}-\x{2069}\x{206A}-\x{206F}\x{3164}\x{FE00}-\x{FE0F}\x{FEFF}\x{FFA0}\x{FFF9}-\x{FFFB}\x{1D173}-\x{1D17A}\x{E0000}-\x{E007F}\x{E0100}-\x{E01EF}\x{E000}-\x{F8FF}\x{FDD0}-\x{FDEF}\x{FFFE}\x{FFFF}\x{F0000}-\x{10FFFF}]'
 # Exit 1 = clean; exit 2 = grep -P unsupported (BSD grep) — a missing engine must not read as "clean".
 case $? in 1) echo "→ no hidden/invisible/smuggling characters added";; 2) echo "⚠ grep -P unavailable here — rerun this scan under ripgrep (rg) or ugrep (ug); a clean result is NOT trustworthy until you do";; esac
+
+# 2d-unusual-space. Non-ASCII spaces that render as a plain space (NBSP, en/em/thin spaces, narrow
+#     NBSP, math space). Lower severity: common in translated prose, so only code hits matter.
+#     (U+3000 ideographic space is left out; it is routine in CJK text.)
+grep -nE '^\+($|[^+])' /tmp/pr.diff \
+  | grep -nP '[\x{00A0}\x{2000}-\x{200A}\x{202F}\x{205F}]'
+case $? in 1) echo "→ no unusual spaces added";; 2) echo "⚠ grep -P unavailable here — rerun under ripgrep/ugrep before trusting a clean result";; esac
 
 # 2d-bis. Homoglyphs — Greek/Cyrillic/Armenian/Coptic letters posing as Latin in code (TR39 confusables).
 grep -nE '^\+($|[^+])' /tmp/pr.diff \
@@ -193,6 +202,9 @@ Interpreting the scans:
 - **2c:** any hit needs a human read. `eval`/`Function`/`atob`/`fromCharCode`/`\x..` escapes are how payloads hide; `curl`/`/dev/tcp`/`bash -c` are how they exfiltrate or stage. (`execFile('git', [..arg array..])` with no shell is normal; a shelled-out `execSync(\`...${var}...\`)` is not.) The token-split tail (`globalThis['ev'+'al']`, `require(varName)`, `.constructor(...)`) catches names assembled at runtime to dodge a literal match.
 - **2c-bis:** reads of `~/.npmrc`, `GITHUB_TOKEN`, cloud keys, or `KUBECONFIG` are the Shai-Hulud worm's whole purpose (steal tokens → republish packages → self-spread). A dependency or test change has no business touching credential files; treat any hit as hostile until explained.
 - **2d:** a hit means the change hides something from you — bidi-reordered code (Trojan Source, CVE-2021-42574), a zero-width-split keyword, tag-block text an LLM reads as instructions but you can't see (ASCII smuggling), or bytes steganographically packed into variation selectors (the GlassWorm / os-info-checker-es6 npm technique). Treat as hostile until proven otherwise, and decode the exact codepoints with the `python3` helper above before trusting any explanation. Two known-benign cases: a leading U+FEFF BOM, and ZWJ (U+200D) / U+FE0F inside a real emoji sequence — confirm that's what it is.
+  Noncharacters and private-use code points can be legitimate as *data* (e.g. a sanitizer and its tests),
+  but the source should spell them as escapes (`\uFFFE`); a raw one is still a finding, so ask for the escape.
+- **2d-unusual-space:** in code, a non-ASCII space can split an identifier or string that looks intact; ask for an escape or a plain space. In translated docs it is usually typography and fine.
 - **2d-bis:** a Greek/Cyrillic/Armenian letter inside otherwise-Latin code is almost always a homoglyph swap (a lookalike identifier that resolves to a *different* symbol than the one you read). Legitimate only in genuine i18n strings or test fixtures; in identifiers or URLs, treat as hostile.
 - **2e:** confirm every host is expected. A hardcoded, single, well-known host (e.g. `https://github.com/`) is fine; an unexpected domain, a bare IP, or a URL built from a variable is a red flag.
 - **2g:** deletions are a blind spot for every added-line scan — removing `if (!verifySignature(...)) throw` silently disables a guard. Each hit is a *candidate*, not a verdict (refactors delete code too); confirm the removed line was load-bearing security, not dead code.
